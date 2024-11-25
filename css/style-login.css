@@ -1,0 +1,108 @@
+/* Estilos principais para o Login */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container-login {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 36px;
+    color: #2b3940;
+    font-weight: 700;
+}
+
+.login-header p {
+    font-size: 16px;
+    color: #2b9bff;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2b3940;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input:focus {
+    border-color: #00b074;
+    outline: none;
+}
+
+.form-group input[type="submit"] {
+    background-color: #00b074;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #028f56;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Destaque para a restrição de login */
+.login-restriction {
+    background-color: #ffdddd;
+    color: #d9534f;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-login p {
+    font-size: 14px;
+    color: #2b3940;
+}
+
+.footer-login a {
+    color: #2b9bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-login a:hover {
+    text-decoration: underline;
+}

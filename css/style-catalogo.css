@@ -1,0 +1,187 @@
+/*** Catalog Section ***/
+
+/* Estilo para o item de navegação ativo */
+.nav-item.nav-link.active {
+    color: rgb(150, 240, 150); /* Cor do texto ativo */
+    font-weight: bold; /* Deixa o texto mais destacado */
+}
+
+.nav-item.nav-link.active:hover {
+    color: darkgreen; /* Cor do texto ativo ao passar o mouse */
+}
+
+/* Estilo do item do catálogo */
+.cat-item {
+    width: 100%; /* Ajusta o tamanho para responsividade */
+    max-width: 350px; /* Largura máxima do item */
+    margin: 15px auto; /* Centraliza e dá espaçamento */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse o limite */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    background-color: #fff; /* Cor de fundo */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover para quando o usuário passar o mouse */
+.cat-item:hover {
+    transform: translateY(-8px); /* Eleva o item */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+
+/* Estilo da imagem do bolo */
+.cat-item img {
+    width: 100%; /* Ocupa 100% da largura do container */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Faz com que a imagem se ajuste sem distorcer */
+    transition: transform 0.3s ease; /* Transição suave na interação */
+}
+
+.cat-item img:hover {
+    transform: scale(1.05); /* Aumenta a imagem quando passa o mouse */
+}
+
+/* Estilo do nome do bolo */
+.cat-item-name {
+    text-align: center; /* Centraliza o nome */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o nome em negrito */
+    color: #333; /* Cor escura para o nome */
+    padding: 15px 10px; /* Espaçamento ao redor do texto */
+    background-color: #f8f8f8; /* Cor de fundo para o nome */
+    border-top: 1px solid #ddd; /* Linha sutil acima do nome */
+    text-transform: capitalize; /* Deixa a primeira letra de cada palavra maiúscula */
+    margin: 0; /* Remove margens automáticas */
+}
+
+/* Estilo do catálogo em grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grade flexível */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens na tela */
+}
+
+/* Detalhes do produto */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-item:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-details h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f56d6d;
+}
+
+.product-btn {
+    padding: 12px 30px;
+    background-color: #5cb85c; /* Cor primária */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+    background-color: #4cae4c; /* Cor mais escura no hover */
+}
+
+.product-btn:focus {
+    outline: none;
+}
+
+.product-btn i {
+    margin-left: 10px;
+}
+
+/*** Pagination ***/
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    background-color: #5cb85c; /* Cor do botão de paginação */
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #4cae4c; /* Cor ao passar o mouse */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #4cae4c;
+    color: #fff;
+}
+
+/* Usar Flexbox no body */
+body {
+    display: flex;            /* Torna o body um contêiner flexível */
+    flex-direction: column;   /* Organiza o conteúdo em uma coluna */
+    min-height: 100vh;        /* O body ocupa toda a altura da tela */
+}
+
+/* O conteúdo ocupa o espaço restante */
+.container-xxl {
+    flex: 1;                  /* Faz o conteúdo ocupar o espaço restante */
+}
+
+/* Estilizando o rodapé */
+.footer {
+    margin-top: auto;         /* Empurra o rodapé para o fundo da página */
+    padding-top: 30px;        /* Espaçamento no topo do rodapé */
+    padding-bottom: 30px;     /* Espaçamento no fundo do rodapé */
+}
+
+
+
+
+
+
+

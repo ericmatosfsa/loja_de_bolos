@@ -3,7 +3,7 @@
 function criarTabelaFuncionario() {
     // Conectar ao banco de dados
     try {
-        // Substitua 'root' e 'root' pelos dados corretos do seu banco de dados
+        
         $pdo = new PDO('mysql:host=localhost;dbname=loja_doce_magia', 'root', 'root');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
